@@ -1,0 +1,31 @@
+[2023-05-05 05:42:44,650] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/taskinstance.py:2210 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:42:44,653] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: file_sensor_example.move_files manual__2023-05-05T05:39:41.030234+00:00 [queued]>
+[2023-05-05 05:42:44,663] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: file_sensor_example.move_files manual__2023-05-05T05:39:41.030234+00:00 [queued]>
+[2023-05-05 05:42:44,664] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-05 05:42:44,664] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2023-05-05 05:42:44,665] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-05 05:42:44,675] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): move_files> on 2023-05-05 05:39:41.030234+00:00
+[2023-05-05 05:42:44,677] {standard_task_runner.py:52} INFO - Started process 6873 to run task
+[2023-05-05 05:42:44,681] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'file_sensor_example', 'move_files', 'manual__2023-05-05T05:39:41.030234+00:00', '--job-id', '179', '--raw', '--subdir', 'DAGS_FOLDER/sensor_sample.py', '--cfg-path', '/tmp/tmptkr015wt', '--error-file', '/tmp/tmpaqqvnig2']
+[2023-05-05 05:42:44,682] {standard_task_runner.py:77} INFO - Job 179: Subtask move_files
+[2023-05-05 05:42:49,792] {logging_mixin.py:109} INFO - Running <TaskInstance: file_sensor_example.move_files manual__2023-05-05T05:39:41.030234+00:00 [running]> on host ccbba2675476
+[2023-05-05 05:42:49,843] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:42:49,881] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:42:49,892] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+[2023-05-05 05:42:49,903] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/renderedtifields.py:163 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:42:49,909] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=file_sensor_example
+AIRFLOW_CTX_TASK_ID=move_files
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-05T05:39:41.030234+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-05T05:39:41.030234+00:00
+[2023-05-05 05:42:49,918] {logging_mixin.py:109} INFO - Moved sensorflow.txt to /app/datalake/bronze/sensor_sample/20230505054249_sensorflow.txt
+[2023-05-05 05:42:49,918] {python.py:175} INFO - Done. Returned value was: None
+[2023-05-05 05:42:49,936] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=file_sensor_example, task_id=move_files, execution_date=20230505T053941, start_date=20230505T054244, end_date=20230505T054249
+[2023-05-05 05:42:54,815] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-05-05 05:42:54,854] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-05 05:42:54,856] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/dag.py:1076 SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+[2023-05-05 05:42:54,857] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/dag.py:1076 SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)

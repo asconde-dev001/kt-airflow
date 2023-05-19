@@ -1,0 +1,34 @@
+[2023-05-05 05:29:03,797] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: postgres_pipeline.create_output_file_suppliers manual__2023-05-05T05:28:50.315153+00:00 [queued]>
+[2023-05-05 05:29:03,807] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: postgres_pipeline.create_output_file_suppliers manual__2023-05-05T05:28:50.315153+00:00 [queued]>
+[2023-05-05 05:29:03,808] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-05 05:29:03,809] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2023-05-05 05:29:03,809] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-05 05:29:03,826] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): create_output_file_suppliers> on 2023-05-05 05:28:50.315153+00:00
+[2023-05-05 05:29:03,831] {standard_task_runner.py:52} INFO - Started process 6308 to run task
+[2023-05-05 05:29:03,836] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'postgres_pipeline', 'create_output_file_suppliers', 'manual__2023-05-05T05:28:50.315153+00:00', '--job-id', '168', '--raw', '--subdir', 'DAGS_FOLDER/load_from_postgres.py', '--cfg-path', '/tmp/tmpc_dim103', '--error-file', '/tmp/tmpd6ck_90e']
+[2023-05-05 05:29:03,838] {standard_task_runner.py:77} INFO - Job 168: Subtask create_output_file_suppliers
+[2023-05-05 05:29:03,922] {logging_mixin.py:109} INFO - Running <TaskInstance: postgres_pipeline.create_output_file_suppliers manual__2023-05-05T05:28:50.315153+00:00 [running]> on host ccbba2675476
+[2023-05-05 05:29:03,974] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:29:04,008] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:29:04,018] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+[2023-05-05 05:29:04,029] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/renderedtifields.py:163 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:29:04,034] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=postgres_pipeline
+AIRFLOW_CTX_TASK_ID=create_output_file_suppliers
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-05T05:28:50.315153+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-05T05:28:50.315153+00:00
+[2023-05-05 05:29:04,035] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-05-05 05:29:04,037] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'touch /app/datalake/bronze/load_from_postgres/suppliers 20230505052903']
+[2023-05-05 05:29:04,045] {subprocess.py:85} INFO - Output:
+[2023-05-05 05:29:04,049] {subprocess.py:93} INFO - Command exited with return code 0
+[2023-05-05 05:29:04,062] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/xcom.py:104 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:29:04,087] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=postgres_pipeline, task_id=create_output_file_suppliers, execution_date=20230505T052850, start_date=20230505T052903, end_date=20230505T052904
+[2023-05-05 05:29:04,134] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-05-05 05:29:04,186] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-05 05:29:04,188] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/dag.py:1076 SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+[2023-05-05 05:29:04,189] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/dag.py:1076 SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)

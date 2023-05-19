@@ -1,0 +1,6 @@
+table_name,database_name
+customers,public
+employees,public
+orders,public
+products,public
+suppliers,public

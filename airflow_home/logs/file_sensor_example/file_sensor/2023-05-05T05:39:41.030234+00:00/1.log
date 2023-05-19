@@ -1,0 +1,66 @@
+[2023-05-05 05:39:46,759] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: file_sensor_example.file_sensor manual__2023-05-05T05:39:41.030234+00:00 [queued]>
+[2023-05-05 05:39:46,775] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: file_sensor_example.file_sensor manual__2023-05-05T05:39:41.030234+00:00 [queued]>
+[2023-05-05 05:39:46,776] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-05 05:39:46,776] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2023-05-05 05:39:46,777] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-05 05:39:46,787] {taskinstance.py:1259} INFO - Executing <Task(FileSensor): file_sensor> on 2023-05-05 05:39:41.030234+00:00
+[2023-05-05 05:39:46,790] {standard_task_runner.py:52} INFO - Started process 6751 to run task
+[2023-05-05 05:39:46,793] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'file_sensor_example', 'file_sensor', 'manual__2023-05-05T05:39:41.030234+00:00', '--job-id', '178', '--raw', '--subdir', 'DAGS_FOLDER/sensor_sample.py', '--cfg-path', '/tmp/tmp9126f3ri', '--error-file', '/tmp/tmpxquaa4vo']
+[2023-05-05 05:39:46,795] {standard_task_runner.py:77} INFO - Job 178: Subtask file_sensor
+[2023-05-05 05:39:46,889] {logging_mixin.py:109} INFO - Running <TaskInstance: file_sensor_example.file_sensor manual__2023-05-05T05:39:41.030234+00:00 [running]> on host ccbba2675476
+[2023-05-05 05:39:46,931] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:39:46,950] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:39:46,959] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+[2023-05-05 05:39:46,971] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/renderedtifields.py:163 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:39:46,978] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=file_sensor_example
+AIRFLOW_CTX_TASK_ID=file_sensor
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-05T05:39:41.030234+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-05T05:39:41.030234+00:00
+[2023-05-05 05:39:46,994] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:39:52,023] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:39:57,059] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:02,085] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:07,107] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:12,152] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:17,205] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:22,247] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:27,301] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:32,349] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:37,382] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:42,439] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:47,469] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:52,520] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:40:57,571] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:02,612] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:07,661] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:12,682] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:17,727] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:22,772] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:27,819] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:32,867] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:37,918] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:42,970] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:48,010] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:53,043] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:41:58,080] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:03,119] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:08,152] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:13,221] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:18,274] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:23,313] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:28,355] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:33,404] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:38,459] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:43,504] {filesystem.py:59} INFO - Poking for file /app/source/sensors_sample
+[2023-05-05 05:42:43,509] {base.py:249} INFO - Success criteria met. Exiting.
+[2023-05-05 05:42:43,542] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=file_sensor_example, task_id=file_sensor, execution_date=20230505T053941, start_date=20230505T053946, end_date=20230505T054243
+[2023-05-05 05:42:43,591] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-05-05 05:42:43,641] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/taskinstance.py:2210 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+[2023-05-05 05:42:43,648] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-05 05:42:43,650] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/dag.py:1076 SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+[2023-05-05 05:42:43,651] {logging_mixin.py:109} WARNING - /usr/local/lib/python3.7/site-packages/***/models/dag.py:1076 SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)

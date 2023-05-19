@@ -1,0 +1,1885 @@
+[2023-05-04 17:03:59,612] {processor.py:163} INFO - Started process (PID=168) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:03:59,613] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:03:59,614] {logging_mixin.py:109} INFO - [2023-05-04 17:03:59,614] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:03:59,804] {logging_mixin.py:109} INFO - [2023-05-04 17:03:59,803] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:03:59,827] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:03:59,836] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.226 seconds
+[2023-05-04 17:04:30,044] {processor.py:163} INFO - Started process (PID=183) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:04:30,045] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:04:30,046] {logging_mixin.py:109} INFO - [2023-05-04 17:04:30,046] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:04:30,230] {logging_mixin.py:109} INFO - [2023-05-04 17:04:30,229] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:04:30,255] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:04:30,261] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.222 seconds
+[2023-05-04 17:05:00,489] {processor.py:163} INFO - Started process (PID=198) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:00,491] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:05:00,492] {logging_mixin.py:109} INFO - [2023-05-04 17:05:00,492] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:00,675] {logging_mixin.py:109} INFO - [2023-05-04 17:05:00,673] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:05:00,695] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:00,701] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.213 seconds
+[2023-05-04 17:05:16,839] {processor.py:163} INFO - Started process (PID=213) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:16,840] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:05:16,842] {logging_mixin.py:109} INFO - [2023-05-04 17:05:16,841] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:17,023] {logging_mixin.py:109} INFO - [2023-05-04 17:05:17,021] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:05:17,047] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:17,054] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.221 seconds
+[2023-05-04 17:05:23,926] {processor.py:163} INFO - Started process (PID=218) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:23,927] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:05:23,929] {logging_mixin.py:109} INFO - [2023-05-04 17:05:23,928] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:24,121] {logging_mixin.py:109} INFO - [2023-05-04 17:05:24,119] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:05:24,144] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:24,151] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.229 seconds
+[2023-05-04 17:05:25,129] {processor.py:163} INFO - Started process (PID=223) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:25,131] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:05:25,132] {logging_mixin.py:109} INFO - [2023-05-04 17:05:25,132] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:25,307] {logging_mixin.py:109} INFO - [2023-05-04 17:05:25,306] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:05:25,335] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:25,340] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.216 seconds
+[2023-05-04 17:05:55,425] {processor.py:163} INFO - Started process (PID=238) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:55,426] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:05:55,427] {logging_mixin.py:109} INFO - [2023-05-04 17:05:55,427] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:55,641] {logging_mixin.py:109} INFO - [2023-05-04 17:05:55,639] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:05:55,665] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:05:55,672] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.250 seconds
+[2023-05-04 17:06:26,688] {processor.py:163} INFO - Started process (PID=253) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:06:26,690] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:06:26,692] {logging_mixin.py:109} INFO - [2023-05-04 17:06:26,692] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:06:26,876] {logging_mixin.py:109} INFO - [2023-05-04 17:06:26,874] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:06:26,900] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:06:26,906] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.224 seconds
+[2023-05-04 17:06:57,036] {processor.py:163} INFO - Started process (PID=268) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:06:57,037] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:06:57,039] {logging_mixin.py:109} INFO - [2023-05-04 17:06:57,039] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:06:57,212] {logging_mixin.py:109} INFO - [2023-05-04 17:06:57,210] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:06:57,235] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:06:57,242] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.211 seconds
+[2023-05-04 17:07:27,413] {processor.py:163} INFO - Started process (PID=283) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:07:27,414] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:07:27,415] {logging_mixin.py:109} INFO - [2023-05-04 17:07:27,415] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:07:27,618] {logging_mixin.py:109} INFO - [2023-05-04 17:07:27,616] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:07:27,644] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:07:27,651] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.240 seconds
+[2023-05-04 17:07:57,705] {processor.py:163} INFO - Started process (PID=298) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:07:57,707] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:07:57,709] {logging_mixin.py:109} INFO - [2023-05-04 17:07:57,708] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:07:57,880] {logging_mixin.py:109} INFO - [2023-05-04 17:07:57,879] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:07:57,908] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:07:57,914] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.215 seconds
+[2023-05-04 17:08:28,136] {processor.py:163} INFO - Started process (PID=313) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:08:28,139] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:08:28,141] {logging_mixin.py:109} INFO - [2023-05-04 17:08:28,141] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:08:28,317] {logging_mixin.py:109} INFO - [2023-05-04 17:08:28,315] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:08:28,340] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:08:28,347] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.218 seconds
+[2023-05-04 17:08:58,581] {processor.py:163} INFO - Started process (PID=328) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:08:58,582] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:08:58,583] {logging_mixin.py:109} INFO - [2023-05-04 17:08:58,583] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:08:58,761] {logging_mixin.py:109} INFO - [2023-05-04 17:08:58,759] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:08:58,782] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:08:58,788] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.210 seconds
+[2023-05-04 17:09:28,843] {processor.py:163} INFO - Started process (PID=343) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:09:28,845] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:09:28,847] {logging_mixin.py:109} INFO - [2023-05-04 17:09:28,847] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:09:29,034] {logging_mixin.py:109} INFO - [2023-05-04 17:09:29,032] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:09:29,058] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:09:29,065] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.226 seconds
+[2023-05-04 17:09:59,204] {processor.py:163} INFO - Started process (PID=358) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:09:59,206] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:09:59,207] {logging_mixin.py:109} INFO - [2023-05-04 17:09:59,207] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:09:59,374] {logging_mixin.py:109} INFO - [2023-05-04 17:09:59,373] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:09:59,394] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:09:59,401] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.202 seconds
+[2023-05-04 17:10:29,604] {processor.py:163} INFO - Started process (PID=373) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:10:29,605] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:10:29,606] {logging_mixin.py:109} INFO - [2023-05-04 17:10:29,606] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:10:29,765] {logging_mixin.py:109} INFO - [2023-05-04 17:10:29,763] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:10:29,788] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:10:29,795] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.193 seconds
+[2023-05-04 17:10:45,840] {processor.py:163} INFO - Started process (PID=388) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:10:45,842] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:10:45,843] {logging_mixin.py:109} INFO - [2023-05-04 17:10:45,843] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:10:46,028] {logging_mixin.py:109} INFO - [2023-05-04 17:10:46,026] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:10:46,054] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:10:46,061] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.225 seconds
+[2023-05-04 17:11:05,014] {processor.py:163} INFO - Started process (PID=393) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:11:05,016] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:11:05,016] {logging_mixin.py:109} INFO - [2023-05-04 17:11:05,016] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:11:05,204] {logging_mixin.py:109} INFO - [2023-05-04 17:11:05,203] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:11:05,228] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:11:05,234] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.223 seconds
+[2023-05-04 17:11:35,492] {processor.py:163} INFO - Started process (PID=409) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:11:35,492] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:11:35,493] {logging_mixin.py:109} INFO - [2023-05-04 17:11:35,493] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:11:35,667] {logging_mixin.py:109} INFO - [2023-05-04 17:11:35,666] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:11:35,689] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:11:35,695] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.206 seconds
+[2023-05-04 17:12:05,960] {processor.py:163} INFO - Started process (PID=424) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:05,961] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:12:05,962] {logging_mixin.py:109} INFO - [2023-05-04 17:12:05,962] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:06,135] {logging_mixin.py:109} INFO - [2023-05-04 17:12:06,134] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:12:06,156] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:06,162] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.206 seconds
+[2023-05-04 17:12:19,274] {processor.py:163} INFO - Started process (PID=439) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:19,275] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:12:19,276] {logging_mixin.py:109} INFO - [2023-05-04 17:12:19,276] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:19,441] {logging_mixin.py:109} INFO - [2023-05-04 17:12:19,440] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:12:19,464] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:19,470] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.201 seconds
+[2023-05-04 17:12:28,397] {processor.py:163} INFO - Started process (PID=444) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:28,399] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:12:28,401] {logging_mixin.py:109} INFO - [2023-05-04 17:12:28,400] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:28,573] {logging_mixin.py:109} INFO - [2023-05-04 17:12:28,572] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:12:28,595] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:28,602] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.211 seconds
+[2023-05-04 17:12:58,885] {processor.py:163} INFO - Started process (PID=459) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:58,886] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:12:58,888] {logging_mixin.py:109} INFO - [2023-05-04 17:12:58,887] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:59,057] {logging_mixin.py:109} INFO - [2023-05-04 17:12:59,055] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:12:59,079] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:12:59,086] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.206 seconds
+[2023-05-04 17:13:29,245] {processor.py:163} INFO - Started process (PID=474) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:13:29,247] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:13:29,249] {logging_mixin.py:109} INFO - [2023-05-04 17:13:29,248] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:13:29,413] {logging_mixin.py:109} INFO - [2023-05-04 17:13:29,412] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:13:29,435] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:13:29,442] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.201 seconds
+[2023-05-04 17:13:59,765] {processor.py:163} INFO - Started process (PID=489) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:13:59,766] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:13:59,768] {logging_mixin.py:109} INFO - [2023-05-04 17:13:59,768] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:13:59,937] {logging_mixin.py:109} INFO - [2023-05-04 17:13:59,935] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:13:59,960] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:13:59,967] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.209 seconds
+[2023-05-04 17:14:12,907] {processor.py:163} INFO - Started process (PID=504) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:14:12,909] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:14:12,911] {logging_mixin.py:109} INFO - [2023-05-04 17:14:12,910] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:14:13,092] {logging_mixin.py:109} INFO - [2023-05-04 17:14:13,090] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate-table-list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:14:13,118] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:14:13,133] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.231 seconds
+[2023-05-04 17:14:43,357] {processor.py:163} INFO - Started process (PID=519) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:14:43,358] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:14:43,360] {logging_mixin.py:109} INFO - [2023-05-04 17:14:43,360] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:14:43,536] {logging_mixin.py:109} INFO - [2023-05-04 17:14:43,535] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:14:43,558] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:14:43,564] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.213 seconds
+[2023-05-04 17:15:13,631] {processor.py:163} INFO - Started process (PID=534) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:15:13,632] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:15:13,633] {logging_mixin.py:109} INFO - [2023-05-04 17:15:13,633] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:15:13,808] {logging_mixin.py:109} INFO - [2023-05-04 17:15:13,806] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:15:13,831] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:15:13,837] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.209 seconds
+[2023-05-04 17:15:44,127] {processor.py:163} INFO - Started process (PID=549) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:15:44,130] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:15:44,131] {logging_mixin.py:109} INFO - [2023-05-04 17:15:44,131] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:15:44,307] {logging_mixin.py:109} INFO - [2023-05-04 17:15:44,305] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 66, in <module>
+    dag=dag
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 66, in __init__
+    super().__init__(**kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (query_{{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2023-05-04 17:15:44,330] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:15:44,338] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.216 seconds
+[2023-05-04 17:16:01,325] {processor.py:163} INFO - Started process (PID=554) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:16:01,328] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:16:01,329] {logging_mixin.py:109} INFO - [2023-05-04 17:16:01,329] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:16:01,506] {logging_mixin.py:109} INFO - [2023-05-04 17:16:01,505] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 62, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+NameError: name 're' is not defined
+[2023-05-04 17:16:01,533] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:16:01,539] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.219 seconds
+[2023-05-04 17:16:08,548] {processor.py:163} INFO - Started process (PID=559) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:16:08,550] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:16:08,552] {logging_mixin.py:109} INFO - [2023-05-04 17:16:08,551] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:16:08,727] {logging_mixin.py:109} INFO - [2023-05-04 17:16:08,726] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 64, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:16:08,747] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:16:08,753] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.211 seconds
+[2023-05-04 17:16:38,933] {processor.py:163} INFO - Started process (PID=574) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:16:38,935] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:16:38,936] {logging_mixin.py:109} INFO - [2023-05-04 17:16:38,936] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:16:39,112] {logging_mixin.py:109} INFO - [2023-05-04 17:16:39,111] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 64, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:16:39,137] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:16:39,143] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.215 seconds
+[2023-05-04 17:17:09,246] {processor.py:163} INFO - Started process (PID=589) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:17:09,248] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:17:09,250] {logging_mixin.py:109} INFO - [2023-05-04 17:17:09,250] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:17:09,424] {logging_mixin.py:109} INFO - [2023-05-04 17:17:09,422] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 64, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:17:09,447] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:17:09,455] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.214 seconds
+[2023-05-04 17:17:39,672] {processor.py:163} INFO - Started process (PID=604) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:17:39,674] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:17:39,675] {logging_mixin.py:109} INFO - [2023-05-04 17:17:39,675] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:17:39,839] {logging_mixin.py:109} INFO - [2023-05-04 17:17:39,837] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 64, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:17:39,862] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:17:39,867] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.201 seconds
+[2023-05-04 17:18:04,962] {processor.py:163} INFO - Started process (PID=619) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:18:04,964] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:18:04,966] {logging_mixin.py:109} INFO - [2023-05-04 17:18:04,965] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:18:05,136] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:18:05,138] {logging_mixin.py:109} INFO - [2023-05-04 17:18:05,137] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 65, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:18:05,162] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:18:05,168] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.212 seconds
+[2023-05-04 17:18:35,281] {processor.py:163} INFO - Started process (PID=634) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:18:35,283] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:18:35,285] {logging_mixin.py:109} INFO - [2023-05-04 17:18:35,285] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:18:35,476] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:18:35,478] {logging_mixin.py:109} INFO - [2023-05-04 17:18:35,477] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 65, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:18:35,497] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:18:35,503] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.228 seconds
+[2023-05-04 17:19:05,673] {processor.py:163} INFO - Started process (PID=649) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:19:05,674] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:19:05,676] {logging_mixin.py:109} INFO - [2023-05-04 17:19:05,676] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:19:05,847] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:19:05,849] {logging_mixin.py:109} INFO - [2023-05-04 17:19:05,848] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 65, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:19:05,871] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:19:05,878] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.211 seconds
+[2023-05-04 17:19:36,011] {processor.py:163} INFO - Started process (PID=664) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:19:36,013] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:19:36,014] {logging_mixin.py:109} INFO - [2023-05-04 17:19:36,014] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:19:36,180] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:19:36,182] {logging_mixin.py:109} INFO - [2023-05-04 17:19:36,181] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 65, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:19:36,205] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:19:36,212] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.206 seconds
+[2023-05-04 17:20:06,310] {processor.py:163} INFO - Started process (PID=688) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:20:06,312] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:20:06,314] {logging_mixin.py:109} INFO - [2023-05-04 17:20:06,314] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:20:06,499] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:20:06,501] {logging_mixin.py:109} INFO - [2023-05-04 17:20:06,500] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 65, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:20:06,526] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:20:06,532] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.227 seconds
+[2023-05-04 17:20:36,621] {processor.py:163} INFO - Started process (PID=703) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:20:36,622] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:20:36,624] {logging_mixin.py:109} INFO - [2023-05-04 17:20:36,624] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:20:36,796] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:20:36,798] {logging_mixin.py:109} INFO - [2023-05-04 17:20:36,797] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 65, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:20:36,821] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:20:36,827] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.214 seconds
+[2023-05-04 17:21:06,950] {processor.py:163} INFO - Started process (PID=718) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:21:06,951] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:21:06,953] {logging_mixin.py:109} INFO - [2023-05-04 17:21:06,953] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:21:07,121] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:21:07,124] {logging_mixin.py:109} INFO - [2023-05-04 17:21:07,123] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 65, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:21:07,145] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:21:07,151] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.206 seconds
+[2023-05-04 17:21:37,277] {processor.py:163} INFO - Started process (PID=733) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:21:37,278] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:21:37,280] {logging_mixin.py:109} INFO - [2023-05-04 17:21:37,280] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:21:37,453] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:21:37,456] {logging_mixin.py:109} INFO - [2023-05-04 17:21:37,454] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 65, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:21:37,479] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:21:37,485] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.214 seconds
+[2023-05-04 17:22:07,560] {processor.py:163} INFO - Started process (PID=748) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:07,562] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:22:07,563] {logging_mixin.py:109} INFO - [2023-05-04 17:22:07,563] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:07,732] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:22:07,734] {logging_mixin.py:109} INFO - [2023-05-04 17:22:07,733] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 65, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:22:07,758] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:07,764] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.210 seconds
+[2023-05-04 17:22:14,638] {processor.py:163} INFO - Started process (PID=763) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:14,640] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:22:14,642] {logging_mixin.py:109} INFO - [2023-05-04 17:22:14,641] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:14,831] {logging_mixin.py:109} INFO - [2023-05-04 17:22:14,830] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:22:14,855] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:14,861] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.229 seconds
+[2023-05-04 17:22:24,967] {processor.py:163} INFO - Started process (PID=768) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:24,969] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:22:24,970] {logging_mixin.py:109} INFO - [2023-05-04 17:22:24,970] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:25,137] {logging_mixin.py:109} INFO - [2023-05-04 17:22:25,136] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:22:25,166] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:25,171] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.211 seconds
+[2023-05-04 17:22:55,411] {processor.py:163} INFO - Started process (PID=783) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:55,413] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:22:55,415] {logging_mixin.py:109} INFO - [2023-05-04 17:22:55,414] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:55,582] {logging_mixin.py:109} INFO - [2023-05-04 17:22:55,581] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:22:55,603] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:22:55,610] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.205 seconds
+[2023-05-04 17:23:23,712] {processor.py:163} INFO - Started process (PID=798) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:23:23,713] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:23:23,715] {logging_mixin.py:109} INFO - [2023-05-04 17:23:23,715] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:23:23,886] {logging_mixin.py:109} INFO - [2023-05-04 17:23:23,884] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:23:23,907] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:23:23,914] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.209 seconds
+[2023-05-04 17:23:24,815] {processor.py:163} INFO - Started process (PID=803) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:23:24,817] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:23:24,818] {logging_mixin.py:109} INFO - [2023-05-04 17:23:24,818] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:23:24,986] {logging_mixin.py:109} INFO - [2023-05-04 17:23:24,985] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:23:25,009] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:23:25,016] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.205 seconds
+[2023-05-04 17:23:47,207] {processor.py:163} INFO - Started process (PID=956) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:23:47,208] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:23:47,209] {logging_mixin.py:109} INFO - [2023-05-04 17:23:47,209] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:23:47,388] {logging_mixin.py:109} INFO - [2023-05-04 17:23:47,387] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:23:47,407] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:23:47,412] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.207 seconds
+[2023-05-04 17:24:17,675] {processor.py:163} INFO - Started process (PID=973) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:24:17,677] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:24:17,678] {logging_mixin.py:109} INFO - [2023-05-04 17:24:17,678] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:24:17,864] {logging_mixin.py:109} INFO - [2023-05-04 17:24:17,863] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:24:17,886] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:24:17,892] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.220 seconds
+[2023-05-04 17:24:26,951] {processor.py:163} INFO - Started process (PID=988) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:24:26,953] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:24:26,954] {logging_mixin.py:109} INFO - [2023-05-04 17:24:26,954] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:24:27,127] {logging_mixin.py:109} INFO - [2023-05-04 17:24:27,126] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:24:27,148] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:24:27,155] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.209 seconds
+[2023-05-04 17:24:46,547] {processor.py:163} INFO - Started process (PID=1202) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:24:46,548] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:24:46,549] {logging_mixin.py:109} INFO - [2023-05-04 17:24:46,549] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:24:46,708] {logging_mixin.py:109} INFO - [2023-05-04 17:24:46,707] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:24:51,735] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:24:51,742] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.197 seconds
+[2023-05-04 17:25:21,959] {processor.py:163} INFO - Started process (PID=1218) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:25:21,961] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:25:21,962] {logging_mixin.py:109} INFO - [2023-05-04 17:25:21,962] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:25:22,140] {logging_mixin.py:109} INFO - [2023-05-04 17:25:22,139] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:25:27,168] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:25:27,174] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.219 seconds
+[2023-05-04 17:25:33,200] {processor.py:163} INFO - Started process (PID=1233) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:25:33,201] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:25:33,202] {logging_mixin.py:109} INFO - [2023-05-04 17:25:33,202] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:25:33,380] {logging_mixin.py:109} INFO - [2023-05-04 17:25:33,379] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:25:33,402] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:25:33,409] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.212 seconds
+[2023-05-04 17:26:03,699] {processor.py:163} INFO - Started process (PID=1248) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:26:03,700] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:26:03,702] {logging_mixin.py:109} INFO - [2023-05-04 17:26:03,702] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:26:03,878] {logging_mixin.py:109} INFO - [2023-05-04 17:26:03,877] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:26:03,899] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:26:03,906] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.212 seconds
+[2023-05-04 17:26:34,179] {processor.py:163} INFO - Started process (PID=1263) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:26:34,181] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:26:34,182] {logging_mixin.py:109} INFO - [2023-05-04 17:26:34,182] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:26:34,355] {logging_mixin.py:109} INFO - [2023-05-04 17:26:34,354] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:26:39,401] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:26:39,412] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.240 seconds
+[2023-05-04 17:27:09,631] {processor.py:163} INFO - Started process (PID=1278) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:27:09,632] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:27:09,634] {logging_mixin.py:109} INFO - [2023-05-04 17:27:09,634] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:27:09,799] {logging_mixin.py:109} INFO - [2023-05-04 17:27:09,798] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:27:09,822] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:27:09,828] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.203 seconds
+[2023-05-04 17:27:40,077] {processor.py:163} INFO - Started process (PID=1293) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:27:40,078] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:27:40,080] {logging_mixin.py:109} INFO - [2023-05-04 17:27:40,080] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:27:40,244] {logging_mixin.py:109} INFO - [2023-05-04 17:27:40,243] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:27:40,265] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:27:40,272] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.201 seconds
+[2023-05-04 17:28:10,397] {processor.py:163} INFO - Started process (PID=1308) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:28:10,399] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:28:10,400] {logging_mixin.py:109} INFO - [2023-05-04 17:28:10,400] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:28:10,571] {logging_mixin.py:109} INFO - [2023-05-04 17:28:10,570] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:28:15,636] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:28:15,651] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.260 seconds
+[2023-05-04 17:28:45,849] {processor.py:163} INFO - Started process (PID=1323) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:28:45,850] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:28:45,852] {logging_mixin.py:109} INFO - [2023-05-04 17:28:45,852] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:28:46,024] {logging_mixin.py:109} INFO - [2023-05-04 17:28:46,022] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 11, in <module>
+    logging.basicConfig(
+NameError: name 'logging' is not defined
+[2023-05-04 17:28:46,046] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:28:46,053] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.209 seconds
+[2023-05-04 17:29:03,045] {processor.py:163} INFO - Started process (PID=1336) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:29:03,047] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:29:03,049] {logging_mixin.py:109} INFO - [2023-05-04 17:29:03,048] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:29:03,225] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:29:03,226] {logging_mixin.py:109} INFO - [2023-05-04 17:29:03,226] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:29:03,227] {logging_mixin.py:109} INFO - [2023-05-04 17:29:03,226] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:29:03,259] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:29:03,268] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.227 seconds
+[2023-05-04 17:29:33,416] {processor.py:163} INFO - Started process (PID=1348) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:29:33,419] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:29:33,420] {logging_mixin.py:109} INFO - [2023-05-04 17:29:33,420] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:29:33,616] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:29:33,617] {logging_mixin.py:109} INFO - [2023-05-04 17:29:33,617] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:29:33,620] {logging_mixin.py:109} INFO - [2023-05-04 17:29:33,618] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:29:33,660] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:29:33,668] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.259 seconds
+[2023-05-04 17:29:42,427] {processor.py:163} INFO - Started process (PID=1568) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:29:42,428] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:29:42,428] {logging_mixin.py:109} INFO - [2023-05-04 17:29:42,428] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:29:42,582] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:29:42,583] {logging_mixin.py:109} INFO - [2023-05-04 17:29:42,583] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:29:42,585] {logging_mixin.py:109} INFO - [2023-05-04 17:29:42,584] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:29:42,609] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:29:42,616] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.191 seconds
+[2023-05-04 17:30:12,782] {processor.py:163} INFO - Started process (PID=1583) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:30:12,783] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:30:12,784] {logging_mixin.py:109} INFO - [2023-05-04 17:30:12,784] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:30:12,963] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:30:12,964] {logging_mixin.py:109} INFO - [2023-05-04 17:30:12,964] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:30:12,965] {logging_mixin.py:109} INFO - [2023-05-04 17:30:12,964] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:30:12,990] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:30:12,997] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.218 seconds
+[2023-05-04 17:30:43,270] {processor.py:163} INFO - Started process (PID=1598) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:30:43,272] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:30:43,274] {logging_mixin.py:109} INFO - [2023-05-04 17:30:43,273] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:30:43,480] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:30:43,481] {logging_mixin.py:109} INFO - [2023-05-04 17:30:43,481] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:30:43,482] {logging_mixin.py:109} INFO - [2023-05-04 17:30:43,481] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:30:48,515] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:30:48,524] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.257 seconds
+[2023-05-04 17:31:18,839] {processor.py:163} INFO - Started process (PID=1616) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:31:18,840] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:31:18,841] {logging_mixin.py:109} INFO - [2023-05-04 17:31:18,841] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:31:19,070] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:31:19,071] {logging_mixin.py:109} INFO - [2023-05-04 17:31:19,071] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:31:19,073] {logging_mixin.py:109} INFO - [2023-05-04 17:31:19,072] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:31:19,102] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:31:19,110] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.275 seconds
+[2023-05-04 17:31:49,187] {processor.py:163} INFO - Started process (PID=1628) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:31:49,189] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:31:49,190] {logging_mixin.py:109} INFO - [2023-05-04 17:31:49,190] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:31:49,370] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:31:49,371] {logging_mixin.py:109} INFO - [2023-05-04 17:31:49,371] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:31:49,373] {logging_mixin.py:109} INFO - [2023-05-04 17:31:49,372] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:31:54,424] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:31:54,432] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.246 seconds
+[2023-05-04 17:32:24,586] {processor.py:163} INFO - Started process (PID=1646) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:32:24,587] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:32:24,587] {logging_mixin.py:109} INFO - [2023-05-04 17:32:24,587] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:32:24,762] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:32:24,762] {logging_mixin.py:109} INFO - [2023-05-04 17:32:24,762] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:32:24,764] {logging_mixin.py:109} INFO - [2023-05-04 17:32:24,763] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:32:24,789] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:32:24,797] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.213 seconds
+[2023-05-04 17:32:54,912] {processor.py:163} INFO - Started process (PID=1658) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:32:54,913] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:32:54,914] {logging_mixin.py:109} INFO - [2023-05-04 17:32:54,914] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:32:55,086] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:32:55,087] {logging_mixin.py:109} INFO - [2023-05-04 17:32:55,087] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:32:55,088] {logging_mixin.py:109} INFO - [2023-05-04 17:32:55,087] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:33:00,135] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:33:00,142] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.232 seconds
+[2023-05-04 17:33:30,422] {processor.py:163} INFO - Started process (PID=1676) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:33:30,423] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:33:30,424] {logging_mixin.py:109} INFO - [2023-05-04 17:33:30,424] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:33:30,603] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:33:30,604] {logging_mixin.py:109} INFO - [2023-05-04 17:33:30,604] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:33:30,606] {logging_mixin.py:109} INFO - [2023-05-04 17:33:30,605] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:33:30,630] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:33:30,637] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.218 seconds
+[2023-05-04 17:34:00,900] {processor.py:163} INFO - Started process (PID=1688) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:34:00,901] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:34:00,902] {logging_mixin.py:109} INFO - [2023-05-04 17:34:00,902] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:34:01,081] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:34:01,082] {logging_mixin.py:109} INFO - [2023-05-04 17:34:01,082] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:34:01,084] {logging_mixin.py:109} INFO - [2023-05-04 17:34:01,083] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:34:06,110] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:34:06,117] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.219 seconds
+[2023-05-04 17:34:36,387] {processor.py:163} INFO - Started process (PID=1703) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:34:36,388] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:34:36,388] {logging_mixin.py:109} INFO - [2023-05-04 17:34:36,388] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:34:36,556] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:34:36,557] {logging_mixin.py:109} INFO - [2023-05-04 17:34:36,557] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:34:36,558] {logging_mixin.py:109} INFO - [2023-05-04 17:34:36,557] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:34:36,584] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:34:36,592] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.208 seconds
+[2023-05-04 17:35:06,752] {processor.py:163} INFO - Started process (PID=1718) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:35:06,753] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:35:06,753] {logging_mixin.py:109} INFO - [2023-05-04 17:35:06,753] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:35:06,928] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:35:06,929] {logging_mixin.py:109} INFO - [2023-05-04 17:35:06,929] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:35:06,931] {logging_mixin.py:109} INFO - [2023-05-04 17:35:06,930] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:35:06,970] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:35:06,979] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.230 seconds
+[2023-05-04 17:35:37,246] {processor.py:163} INFO - Started process (PID=1733) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:35:37,247] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:35:37,248] {logging_mixin.py:109} INFO - [2023-05-04 17:35:37,247] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:35:37,427] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:35:37,428] {logging_mixin.py:109} INFO - [2023-05-04 17:35:37,428] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:35:37,430] {logging_mixin.py:109} INFO - [2023-05-04 17:35:37,429] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:35:37,461] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:35:37,469] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.226 seconds
+[2023-05-04 17:36:07,578] {processor.py:163} INFO - Started process (PID=1748) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:36:07,579] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:36:07,580] {logging_mixin.py:109} INFO - [2023-05-04 17:36:07,580] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:36:07,759] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:36:07,760] {logging_mixin.py:109} INFO - [2023-05-04 17:36:07,760] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:36:07,761] {logging_mixin.py:109} INFO - [2023-05-04 17:36:07,760] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:36:07,799] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:36:07,809] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.234 seconds
+[2023-05-04 17:36:37,925] {processor.py:163} INFO - Started process (PID=1763) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:36:37,927] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:36:37,927] {logging_mixin.py:109} INFO - [2023-05-04 17:36:37,927] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:36:38,104] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:36:38,105] {logging_mixin.py:109} INFO - [2023-05-04 17:36:38,105] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:36:38,107] {logging_mixin.py:109} INFO - [2023-05-04 17:36:38,105] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:36:38,130] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:36:38,138] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.215 seconds
+[2023-05-04 17:37:08,317] {processor.py:163} INFO - Started process (PID=1778) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:37:08,318] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:37:08,319] {logging_mixin.py:109} INFO - [2023-05-04 17:37:08,319] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:37:08,488] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:37:08,489] {logging_mixin.py:109} INFO - [2023-05-04 17:37:08,489] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:37:08,491] {logging_mixin.py:109} INFO - [2023-05-04 17:37:08,490] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:37:08,520] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:37:08,528] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.214 seconds
+[2023-05-04 17:37:38,744] {processor.py:163} INFO - Started process (PID=1793) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:37:38,745] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:37:38,745] {logging_mixin.py:109} INFO - [2023-05-04 17:37:38,745] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:37:38,918] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:37:38,919] {logging_mixin.py:109} INFO - [2023-05-04 17:37:38,919] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:37:38,921] {logging_mixin.py:109} INFO - [2023-05-04 17:37:38,920] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:37:43,978] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:37:43,987] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.245 seconds
+[2023-05-04 17:38:14,094] {processor.py:163} INFO - Started process (PID=1808) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:38:14,095] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:38:14,096] {logging_mixin.py:109} INFO - [2023-05-04 17:38:14,096] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:38:14,270] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:38:14,271] {logging_mixin.py:109} INFO - [2023-05-04 17:38:14,271] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:38:14,273] {logging_mixin.py:109} INFO - [2023-05-04 17:38:14,272] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:38:19,316] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:38:19,324] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.233 seconds
+[2023-05-04 17:38:49,492] {processor.py:163} INFO - Started process (PID=1823) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:38:49,493] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:38:49,494] {logging_mixin.py:109} INFO - [2023-05-04 17:38:49,494] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:38:49,664] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:38:49,665] {logging_mixin.py:109} INFO - [2023-05-04 17:38:49,665] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:38:49,667] {logging_mixin.py:109} INFO - [2023-05-04 17:38:49,666] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:38:49,690] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:38:49,698] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.208 seconds
+[2023-05-04 17:39:19,880] {processor.py:163} INFO - Started process (PID=1838) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:39:19,881] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:39:19,881] {logging_mixin.py:109} INFO - [2023-05-04 17:39:19,881] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:39:20,060] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:39:20,061] {logging_mixin.py:109} INFO - [2023-05-04 17:39:20,061] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:39:20,062] {logging_mixin.py:109} INFO - [2023-05-04 17:39:20,061] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:39:20,087] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:39:20,095] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.218 seconds
+[2023-05-04 17:39:50,307] {processor.py:163} INFO - Started process (PID=1853) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:39:50,308] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:39:50,309] {logging_mixin.py:109} INFO - [2023-05-04 17:39:50,309] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:39:50,481] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:39:50,482] {logging_mixin.py:109} INFO - [2023-05-04 17:39:50,482] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:39:50,483] {logging_mixin.py:109} INFO - [2023-05-04 17:39:50,482] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:39:50,509] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:39:50,520] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.215 seconds
+[2023-05-04 17:40:20,648] {processor.py:163} INFO - Started process (PID=1868) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:40:20,650] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:40:20,651] {logging_mixin.py:109} INFO - [2023-05-04 17:40:20,651] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:40:20,828] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:40:20,829] {logging_mixin.py:109} INFO - [2023-05-04 17:40:20,829] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:40:20,831] {logging_mixin.py:109} INFO - [2023-05-04 17:40:20,830] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:40:20,857] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:40:20,865] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.220 seconds
+[2023-05-04 17:40:51,029] {processor.py:163} INFO - Started process (PID=1883) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:40:51,031] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:40:51,031] {logging_mixin.py:109} INFO - [2023-05-04 17:40:51,031] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:40:51,205] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:40:51,206] {logging_mixin.py:109} INFO - [2023-05-04 17:40:51,206] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:40:51,208] {logging_mixin.py:109} INFO - [2023-05-04 17:40:51,207] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:40:51,236] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:40:51,244] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.218 seconds
+[2023-05-04 17:41:21,354] {processor.py:163} INFO - Started process (PID=1898) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:41:21,355] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:41:21,356] {logging_mixin.py:109} INFO - [2023-05-04 17:41:21,356] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:41:21,533] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:41:21,534] {logging_mixin.py:109} INFO - [2023-05-04 17:41:21,534] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:41:21,536] {logging_mixin.py:109} INFO - [2023-05-04 17:41:21,535] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:41:21,559] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:41:21,569] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.218 seconds
+[2023-05-04 17:41:51,719] {processor.py:163} INFO - Started process (PID=1913) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:41:51,720] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:41:51,721] {logging_mixin.py:109} INFO - [2023-05-04 17:41:51,721] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:41:51,895] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:41:51,896] {logging_mixin.py:109} INFO - [2023-05-04 17:41:51,896] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:41:51,897] {logging_mixin.py:109} INFO - [2023-05-04 17:41:51,896] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:41:51,922] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:41:51,929] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.212 seconds
+[2023-05-04 17:42:22,110] {processor.py:163} INFO - Started process (PID=1928) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:42:22,111] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:42:22,112] {logging_mixin.py:109} INFO - [2023-05-04 17:42:22,112] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:42:22,289] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:42:22,290] {logging_mixin.py:109} INFO - [2023-05-04 17:42:22,290] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:42:22,292] {logging_mixin.py:109} INFO - [2023-05-04 17:42:22,291] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:42:22,313] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:42:22,320] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.212 seconds
+[2023-05-04 17:42:52,521] {processor.py:163} INFO - Started process (PID=1943) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:42:52,523] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:42:52,524] {logging_mixin.py:109} INFO - [2023-05-04 17:42:52,524] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:42:52,695] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:42:52,696] {logging_mixin.py:109} INFO - [2023-05-04 17:42:52,696] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:42:52,698] {logging_mixin.py:109} INFO - [2023-05-04 17:42:52,697] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:42:57,742] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:42:57,751] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.233 seconds
+[2023-05-04 17:43:27,944] {processor.py:163} INFO - Started process (PID=1958) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:43:27,944] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:43:27,945] {logging_mixin.py:109} INFO - [2023-05-04 17:43:27,945] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:43:28,115] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:43:28,116] {logging_mixin.py:109} INFO - [2023-05-04 17:43:28,115] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:43:28,117] {logging_mixin.py:109} INFO - [2023-05-04 17:43:28,116] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:43:28,149] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:43:28,157] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.216 seconds
+[2023-05-04 17:43:58,360] {processor.py:163} INFO - Started process (PID=1973) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:43:58,361] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:43:58,362] {logging_mixin.py:109} INFO - [2023-05-04 17:43:58,362] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:43:58,537] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:43:58,539] {logging_mixin.py:109} INFO - [2023-05-04 17:43:58,538] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:43:58,540] {logging_mixin.py:109} INFO - [2023-05-04 17:43:58,539] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:43:58,563] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:43:58,570] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.212 seconds
+[2023-05-04 17:44:28,771] {processor.py:163} INFO - Started process (PID=1988) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:44:28,772] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:44:28,772] {logging_mixin.py:109} INFO - [2023-05-04 17:44:28,772] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:44:28,946] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:44:28,947] {logging_mixin.py:109} INFO - [2023-05-04 17:44:28,947] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:44:28,949] {logging_mixin.py:109} INFO - [2023-05-04 17:44:28,948] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:44:28,975] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:44:28,982] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.214 seconds
+[2023-05-04 17:44:59,150] {processor.py:163} INFO - Started process (PID=2003) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:44:59,151] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:44:59,152] {logging_mixin.py:109} INFO - [2023-05-04 17:44:59,152] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:44:59,322] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:44:59,323] {logging_mixin.py:109} INFO - [2023-05-04 17:44:59,323] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:44:59,324] {logging_mixin.py:109} INFO - [2023-05-04 17:44:59,323] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:45:04,368] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:45:04,376] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.229 seconds
+[2023-05-04 17:45:34,569] {processor.py:163} INFO - Started process (PID=2018) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:45:34,570] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:45:34,571] {logging_mixin.py:109} INFO - [2023-05-04 17:45:34,571] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:45:34,741] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:45:34,742] {logging_mixin.py:109} INFO - [2023-05-04 17:45:34,742] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:45:34,743] {logging_mixin.py:109} INFO - [2023-05-04 17:45:34,742] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:45:39,787] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:45:39,801] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.234 seconds
+[2023-05-04 17:46:09,961] {processor.py:163} INFO - Started process (PID=2033) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:46:09,962] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:46:09,962] {logging_mixin.py:109} INFO - [2023-05-04 17:46:09,962] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:46:10,134] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:46:10,135] {logging_mixin.py:109} INFO - [2023-05-04 17:46:10,135] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:46:10,136] {logging_mixin.py:109} INFO - [2023-05-04 17:46:10,135] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:46:10,160] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:46:10,167] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.209 seconds
+[2023-05-04 17:46:40,414] {processor.py:163} INFO - Started process (PID=2048) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:46:40,416] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 17:46:40,417] {logging_mixin.py:109} INFO - [2023-05-04 17:46:40,417] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:46:40,581] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:46:40,582] {logging_mixin.py:109} INFO - [2023-05-04 17:46:40,582] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 17:46:40,583] {logging_mixin.py:109} INFO - [2023-05-04 17:46:40,582] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 17:46:45,646] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 17:46:45,661] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.252 seconds
+[2023-05-04 18:39:28,080] {processor.py:163} INFO - Started process (PID=2054) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 18:39:28,081] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 18:39:28,081] {logging_mixin.py:109} INFO - [2023-05-04 18:39:28,081] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 18:39:28,317] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 18:39:28,318] {logging_mixin.py:109} INFO - [2023-05-04 18:39:28,318] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 18:39:28,321] {logging_mixin.py:109} INFO - [2023-05-04 18:39:28,319] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 18:39:28,348] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 18:39:28,370] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.292 seconds
+[2023-05-04 19:47:54,280] {processor.py:163} INFO - Started process (PID=2074) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 19:47:54,283] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 19:47:54,287] {logging_mixin.py:109} INFO - [2023-05-04 19:47:54,287] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 19:47:54,483] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 19:47:54,491] {logging_mixin.py:109} INFO - [2023-05-04 19:47:54,491] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 19:47:54,493] {logging_mixin.py:109} INFO - [2023-05-04 19:47:54,492] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 19:47:54,513] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 19:47:54,519] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.242 seconds
+[2023-05-04 20:54:43,444] {processor.py:163} INFO - Started process (PID=2093) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 20:54:43,447] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 20:54:43,448] {logging_mixin.py:109} INFO - [2023-05-04 20:54:43,448] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 20:54:43,829] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 20:54:43,829] {logging_mixin.py:109} INFO - [2023-05-04 20:54:43,829] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 20:54:43,831] {logging_mixin.py:109} INFO - [2023-05-04 20:54:43,830] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 20:54:48,888] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 20:54:48,903] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 5.464 seconds
+[2023-05-04 22:22:00,882] {processor.py:163} INFO - Started process (PID=2114) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 22:22:00,883] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 22:22:00,884] {logging_mixin.py:109} INFO - [2023-05-04 22:22:00,884] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 22:22:01,199] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 22:22:01,200] {logging_mixin.py:109} INFO - [2023-05-04 22:22:01,200] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 22:22:01,201] {logging_mixin.py:109} INFO - [2023-05-04 22:22:01,200] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 22:22:01,222] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 22:22:01,228] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.352 seconds
+[2023-05-04 23:27:16,506] {processor.py:163} INFO - Started process (PID=2133) to work on /app/airflow/dags/load_from_postgres.py
+[2023-05-04 23:27:16,508] {processor.py:642} INFO - Processing file /app/airflow/dags/load_from_postgres.py for tasks to queue
+[2023-05-04 23:27:16,509] {logging_mixin.py:109} INFO - [2023-05-04 23:27:16,509] {dagbag.py:500} INFO - Filling up the DagBag from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 23:27:16,817] {logging_mixin.py:109} INFO - TABLE NAME: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 23:27:16,822] {logging_mixin.py:109} INFO - [2023-05-04 23:27:16,822] {load_from_postgres.py:73} WARNING - Table Name: {{ task_instance.xcom_pull(task_ids='generate_table_list', dag_id='postgres_to_localfile', key='0') }}
+[2023-05-04 23:27:16,824] {logging_mixin.py:109} INFO - [2023-05-04 23:27:16,823] {dagbag.py:334} ERROR - Failed to import: /app/airflow/dags/load_from_postgres.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/airflow/dags/load_from_postgres.py", line 74, in <module>
+    table_id = re.sub('[^0-9a-zA-Z]+', '_', table_name)
+  File "/usr/local/lib/python3.7/re.py", line 194, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object
+[2023-05-04 23:27:16,843] {processor.py:656} WARNING - No viable dags retrieved from /app/airflow/dags/load_from_postgres.py
+[2023-05-04 23:27:16,849] {processor.py:171} INFO - Processing /app/airflow/dags/load_from_postgres.py took 0.347 seconds
